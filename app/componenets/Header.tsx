@@ -23,10 +23,14 @@ export default function Header() {
             <li className="font-medium">About</li>
           </Link>
           <Link href="">
-            <li className="font-medium">Contact Me</li>
+            <li className="font-medium">Projects</li>
           </Link>
         </ul>
       </nav>
+
+      <button className="btn w-[120px] h-[40px] rounded-lg bg-[var(--color-2)] text-[12px] font-medium text-white">
+        Contact Me
+      </button>
     </header>
   );
 }

@@ -41,3 +41,9 @@ body.light {
     --color-4: transparent;
   }
 }
+
+.center-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

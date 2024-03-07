@@ -58,7 +58,7 @@ export default function RootLayout({
           href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css"
         ></link>
       </head>
-      <body>
+      <body className="dark">
         <Header />
         {children}
       </body>
