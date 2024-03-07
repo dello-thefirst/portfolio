@@ -2,7 +2,7 @@ import React from "react";
 
 const Stacks = () => {
   return (
-    <div className="stack-container w-full h-auto flex py-[10%]">
+    <div className="stack-container w-full h-auto flex py-[10%] sm:flex-col">
       <div className="left w-full">
         <p className="text-[15px] text-[var(--color-2)] font-medium mb-4">
           Fullstack web developer
@@ -24,7 +24,7 @@ const Stacks = () => {
           quibusdam aut dicta, nemo dolorum dolor deleniti corrupti?
         </p>
       </div>
-      <div className="right w-full px-[8%] ">
+      <div className="right w-full px-[8%] sm:px-0 sm:mt-5 ">
         <p className="text-[25px] text-[var(--color-3)] font-medium">Stack</p>
         <div className="w-ful grid grid-cols-4 gap-[10px]">
           <div className="item w-full h-[130px] rounded-lg  bg-opacity-10 bg-gray-100 center-div">
