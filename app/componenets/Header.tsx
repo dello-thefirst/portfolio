@@ -1,12 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import ContactMe from "./ContactMe";
 interface PageProps {
   page?: string;
 }
 export default function Header() {
-  const [appTheme, setAppTheme] = useState("dark");
   return (
     <header className="w-full h-[100px] flex items-center px-[10%] justify-between">
       <div className="logo text-[var(--color-2)] text-[22px] font-semibold font-sans">

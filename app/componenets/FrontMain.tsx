@@ -15,10 +15,10 @@ export default function FrontMain() {
               <span className="text-[var(--color-2)] text-shadow-xl">
                 web developer
               </span>{" "}
-              in React, Next JS, JSON, jQuery, PHP and SQL Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Quo fugiat soluta dolore minima
-              sed amet voluptates a repudiandae excepturi iure, obcaecati optio
-              quibusdam aut dicta, nemo dolorum dolor deleniti corrupti?
+              in React, Next JS, JSON, jQuery, PHP and SQL. I bring a dynamic
+              skill set to every project. With a passion for crafting seamless
+              user experiences and robust backend systems, I thrive in both
+              frontend and backend development environments.
             </p>
           </div>
         </div>

@@ -1,4 +1,6 @@
 import React from "react";
+import htmlLogo from "@/app/logos/html.png";
+import Image from "next/image";
 
 const Stacks = () => {
   return (
@@ -8,27 +10,35 @@ const Stacks = () => {
           Fullstack web developer
         </p>
         <p className="text-[13px] text-[var(--color-3)] font-medium mb-4">
-          in React, Next JS, JSON, jQuery, PHP and SQL Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Quo fugiat soluta dolore minima sed
-          amet voluptates a repudiandae excepturi iure, obcaecati optio
-          quibusdam aut dicta, nemo dolorum dolor deleniti corrupti?
+          in React, Next JS, JSON, jQuery, PHP and SQL. As a seasoned fullstack
+          web developer proficient in an array of technologies, including React,
+          Next.js, JSON, jQuery, PHP, and SQL, I bring a dynamic skill set to
+          every project. With a passion for crafting seamless user experiences
+          and robust backend systems, I thrive in both frontend and backend
+          development environments.
         </p>
         <p className="text-[13px] text-[var(--color-3)] font-medium mb-4">
-          amet consectetur adipisicing elit. Quo fugiat soluta dolore minima sed
-          amet voluptates a repudiandae excepturi iure, obcaecati optio
-          quibusdam aut dicta, nemo dolorum dolor deleniti corrupti?
+          In my portfolio, you&apos;ll find a diverse range of projects
+          showcasing my proficiency in creating responsive and intuitive web
+          applications. Leveraging the power of React and Next.js, I excel in
+          building modern, scalable frontend interfaces that prioritize
+          usability and performance. Whether it&apos;s crafting interactive user
+          interfaces or implementing complex data-driven features, I always aim
+          to exceed expectations.
         </p>
         <p className="text-[13px] text-[var(--color-3)] font-medium">
-          amet consectetur adipisicing elit. Quo fugiat soluta dolore minima sed
-          amet voluptates a repudiandae excepturi iure, obcaecati optio
-          quibusdam aut dicta, nemo dolorum dolor deleniti corrupti?
+          My expertise extends to backend development, where I utilize PHP and
+          SQL to architect secure and efficient server-side solutions. From
+          designing relational databases to implementing RESTful APIs, I take
+          pride in building robust backend systems that seamlessly integrate
+          with frontend components.
         </p>
       </div>
       <div className="right w-full px-[8%] sm:px-0 sm:mt-5 ">
         <p className="text-[25px] text-[var(--color-3)] font-medium">Stack</p>
         <div className="w-ful grid grid-cols-4 gap-[10px]">
           <div className="item w-full h-[130px] rounded-lg  bg-opacity-10 bg-gray-100 center-div">
-            HTML
+            <Image src={htmlLogo} alt=""></Image>
           </div>
           <div className="item w-full h-[130px] rounded-lg  bg-opacity-10 bg-gray-100 center-div">
             CSS
