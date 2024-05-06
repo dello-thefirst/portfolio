@@ -1,8 +1,13 @@
 import React from "react";
+import Image from "next/image";
 import htmlLogo from "@/app/logos/html.png";
 import cssLogo from "@/app/logos/css.png";
 import phpLogo from "@/app/logos/php.png";
-import Image from "next/image";
+import reactLogo from "@/app/logos/react.png";
+import nextjsLogo from "@/app/logos/nextjs.png";
+import tailwindLogo from "@/app/logos/tailwind.png";
+import jqueryLogo from "@/app/logos/jquery.png";
+import sqlLogo from "@/app/logos/sql.png";
 
 const Stacks = () => {
   return (
@@ -49,19 +54,19 @@ const Stacks = () => {
             <Image src={phpLogo} alt=""></Image>
           </div>
           <div className="item w-full h-[130px] rounded-lg  bg-opacity-10  center-div">
-            REACT
+            <Image src={reactLogo} alt=""></Image>
           </div>
           <div className="item w-full h-[130px] rounded-lg  bg-opacity-10  center-div">
-            NEXT JS
+            <Image src={nextjsLogo} alt=""></Image>
           </div>
           <div className="item w-full h-[130px] rounded-lg  bg-opacity-10  center-div">
-            TAILWIND
+            <Image src={tailwindLogo} alt=""></Image>
           </div>
           <div className="item w-full h-[130px] rounded-lg  bg-opacity-10  center-div">
-            JQUERY
+            <Image src={jqueryLogo} alt=""></Image>
           </div>
           <div className="item w-full h-[130px] rounded-lg  bg-opacity-10 center-div">
-            SQL
+            <Image src={sqlLogo} alt=""></Image>
           </div>
         </div>
       </div>
