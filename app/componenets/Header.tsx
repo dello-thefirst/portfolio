@@ -26,7 +26,10 @@ export default function Header() {
         </ul>
       </nav>
 
-      <button className="btn w-[120px] h-[40px] rounded-lg bg-[var(--color-2)] text-[12px] font-medium text-white">
+      <button
+        className="btn w-[120px] h-[40px] rounded-lg bg-[var(--color-2)] text-[12px] font-medium text-white"
+        onClick={() => window.location.assign("https://wa.me/2349125165937")}
+      >
         Contact Me
       </button>
     </header>

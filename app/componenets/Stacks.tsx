@@ -1,5 +1,7 @@
 import React from "react";
 import htmlLogo from "@/app/logos/html.png";
+import cssLogo from "@/app/logos/css.png";
+import phpLogo from "@/app/logos/php.png";
 import Image from "next/image";
 
 const Stacks = () => {
@@ -36,29 +38,29 @@ const Stacks = () => {
       </div>
       <div className="right w-full px-[8%] sm:px-0 sm:mt-5 ">
         <p className="text-[25px] text-[var(--color-3)] font-medium">Stack</p>
-        <div className="w-ful grid grid-cols-4 gap-[10px]">
-          <div className="item w-full h-[130px] rounded-lg  bg-opacity-10 bg-gray-100 center-div">
+        <div className="w-ful grid grid-cols-4 sm:grid-cols-3 gap-[10px]">
+          <div className="item w-full h-[130px] rounded-lg  bg-opacity-10 center-div">
             <Image src={htmlLogo} alt=""></Image>
           </div>
-          <div className="item w-full h-[130px] rounded-lg  bg-opacity-10 bg-gray-100 center-div">
-            CSS
+          <div className="item w-full h-[130px] rounded-lg  bg-opacity-10  center-div">
+            <Image src={cssLogo} alt=""></Image>
           </div>
-          <div className="item w-full h-[130px] rounded-lg  bg-opacity-10 bg-gray-100 center-div">
-            PHP
+          <div className="item w-full h-[130px] rounded-lg  bg-opacity-10  center-div">
+            <Image src={phpLogo} alt=""></Image>
           </div>
-          <div className="item w-full h-[130px] rounded-lg  bg-opacity-10 bg-gray-100 center-div">
+          <div className="item w-full h-[130px] rounded-lg  bg-opacity-10  center-div">
             REACT
           </div>
-          <div className="item w-full h-[130px] rounded-lg  bg-opacity-10 bg-gray-100 center-div">
+          <div className="item w-full h-[130px] rounded-lg  bg-opacity-10  center-div">
             NEXT JS
           </div>
-          <div className="item w-full h-[130px] rounded-lg  bg-opacity-10 bg-gray-100 center-div">
+          <div className="item w-full h-[130px] rounded-lg  bg-opacity-10  center-div">
             TAILWIND
           </div>
-          <div className="item w-full h-[130px] rounded-lg  bg-opacity-10 bg-gray-100 center-div">
+          <div className="item w-full h-[130px] rounded-lg  bg-opacity-10  center-div">
             JQUERY
           </div>
-          <div className="item w-full h-[130px] rounded-lg  bg-opacity-10 bg-gray-100 center-div">
+          <div className="item w-full h-[130px] rounded-lg  bg-opacity-10 center-div">
             SQL
           </div>
         </div>
