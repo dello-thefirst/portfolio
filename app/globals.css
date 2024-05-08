@@ -19,7 +19,7 @@ html {
   --color-3: rgb(175, 173, 173);
   --color-4: rgb(96, 10, 101);
   --color-5: red;
-  font-family: var(--font-main);
+  font-family: "Poppins", sans-serif;
   background-color: var(--bg-main);
   height: 100vh;
 }
