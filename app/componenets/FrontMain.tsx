@@ -37,6 +37,9 @@ export default function FrontMain() {
               alt=""
             ></Image>
           </div>
+          <p className="text-[var(--color-2)] text-[11px] italic">
+            Simply out of this world...
+          </p>
           <p className="h-[40px] items-center socials text-center flex gap-10 text-[var(--color-3)] text-[20px] ">
             <Link href="">
               <i className="fa-brands fa-facebook-f transition duration-[0.1s] hover:text-blue-500"></i>
