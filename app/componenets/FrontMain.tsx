@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Portrait from "../Portrait.webp";
+import Portrait from "../0_0.webp";
 import Link from "next/link";
 export default function FrontMain() {
   return (
@@ -8,7 +8,8 @@ export default function FrontMain() {
         <div className="left w-full h-full flex items-center">
           <div>
             <p className="text-[50px] text-[var(--color-1)] font-bold sm:text-[30px] sm:mb-[10px]">
-              Dev,<br></br> Victor Faruna
+              Dev<span className="text-[var(--color-2)]">.</span>
+              <br></br> Victor Faruna
             </p>
             <p className="text-[13px] text-[var(--color-3)] font-medium">
               Fullstack{" "}

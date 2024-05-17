@@ -6,7 +6,7 @@ interface PageProps {
 }
 export default function Header() {
   return (
-    <header className="w-full h-[100px] flex items-center px-[10%] justify-between">
+    <header className="w-full h-[100px] flex items-center px-[5%] justify-between">
       <div className="logo text-[var(--color-2)] text-[22px] font-semibold font-sans">
         <Link href={`/`}>
           <span className="text-[var(--color-1)]">Dev</span> Victor
