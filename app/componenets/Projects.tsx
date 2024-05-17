@@ -7,8 +7,8 @@ import entertainmentCardImage from "@/app/assets/images/entertainment-card.png";
 export function CardContainer() {
   return (
     <>
-      <p className="text-center text-[40px] font-bold mb-5 sm:text-[30px]">
-        Services I Offer...
+      <p className="text-center text-[40px] font-semibold mb-3 sm:text-[25px]">
+        Services I Offer<span className="text-[var(--color-2)]">.</span>
       </p>
       <div className="card-container grid grid-cols-4 gap-3 sm:grid-cols-2">
         <div className="card overflow-hidden rounded-lg bg-slate-50/10">
