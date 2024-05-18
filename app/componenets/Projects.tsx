@@ -36,7 +36,7 @@ export function CardContainer() {
           ></Image>
           <div className="w-full p-5 sm:p4 pb-10">
             <p className="text-[20px] sm:text-[15px] mb-4">
-              Business Website Creation
+              Portfolio Website Creation
             </p>
 
             <p className="desc text-[var(--color-3)] text-[12px] sm:text-[9px]">
