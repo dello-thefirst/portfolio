@@ -14,6 +14,23 @@ export const metadata: Metadata = {
   title: "My Portfolio - Victor Faruna",
   description:
     "I am a seasoned fullstack web developer proficient in an array of technologies, including React, Next.js, JSON, jQuery, PHP, and SQL, I bring a dynamic skill set to every project. With a passion for crafting seamless user experiences and robust backend systems, I thrive in both frontend and backend development environments",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://victorfaruna.vercel.app",
+    title: "My Portfolio - Victor Faruna",
+    description:
+      "I am a seasoned fullstack web developer proficient in an array of technologies, including React, Next.js, JSON, jQuery, PHP, and SQL, I bring a dynamic skill set to every project. With a passion for crafting seamless user experiences and robust backend systems, I thrive in both frontend and backend development environments",
+    images: [
+      {
+        url: "https://victorfaruna.vercel.app/favicon.ico",
+        width: 1200,
+        height: 630,
+        alt: "My Portfolio - Victor Faruna",
+      },
+    ],
+    siteName: "My Portfolio - Victor Faruna",
+  },
 };
 
 export default function RootLayout({
