@@ -17,10 +17,10 @@ const config: Config = {
       lg: { max: "1023px" },
       // => @media (max-width: 1023px) { ... }
 
-      md: { max: "1000px" },
+      md: { max: "970px" },
       // => @media (max-width: 767px) { ... }
 
-      sm: { max: "950px" },
+      sm: { max: "600px" },
       // => @media (max-width: 639px) { ... }
     },
   },
