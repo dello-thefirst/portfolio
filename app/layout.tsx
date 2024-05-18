@@ -14,6 +14,14 @@ export const metadata: Metadata = {
   title: "My Portfolio - Victor Faruna",
   description:
     "I am a seasoned fullstack web developer proficient in an array of technologies, including React, Next.js, JSON, jQuery, PHP, and SQL, I bring a dynamic skill set to every project. With a passion for crafting seamless user experiences and robust backend systems, I thrive in both frontend and backend development environments",
+  icons: [
+    { rel: "icon", url: "https://victorfaruna.vercel.app/0_0.webp" },
+    {
+      rel: "apple-touch-icon",
+      url: "https://victorfaruna.vercel.app/0_0.webp",
+    },
+  ],
+  category: "My Portfolio",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -23,7 +31,7 @@ export const metadata: Metadata = {
       "I am a seasoned fullstack web developer proficient in an array of technologies, including React, Next.js, JSON, jQuery, PHP, and SQL, I bring a dynamic skill set to every project. With a passion for crafting seamless user experiences and robust backend systems, I thrive in both frontend and backend development environments",
     images: [
       {
-        url: "https://victorfaruna.vercel.app/favicon.ico",
+        url: "https://victorfaruna.vercel.app/0_0.webp",
         width: 1200,
         height: 630,
         alt: "My Portfolio - Victor Faruna",
