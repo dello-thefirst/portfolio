@@ -54,7 +54,7 @@ export default function RootLayout({
           href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
         />
       </head>
-      <body className="bg-main">
+      <body className="bg-main dark">
         <Header />
         {children}
       </body>
