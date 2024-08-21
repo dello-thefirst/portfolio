@@ -1,11 +1,11 @@
 import Image from "next/image";
-import Portrait from "../0_0.webp";
+import Portrait from "@/src/app/0_0.webp";
 import Link from "next/link";
 export default function FrontMain() {
   return (
-    <main className="w-full h-full">
+    <main className="w-full h-[100vh] sm:h-auto">
       <div className="w-full flex h-[70%] flex-row sm:h-auto sm:flex-col-reverse sm:mb-10">
-        <div className="left w-full h-full flex items-center">
+        <div className="left w-full h-full sm:h-auto flex items-center">
           <div>
             <p className="text-[50px] text-[var(--color-1)] font-bold sm:text-[30px] sm:mb-[10px]">
               Dev<span className="text-[var(--color-2)]">.</span>
@@ -25,20 +25,20 @@ export default function FrontMain() {
         </div>
         <div className="right w-full h-full flex flex-col gap-5 items-center justify-center sm:mb-10">
           <div
-            className="dhh w-[360px] h-[360px] bg-transparent rounded-full overflow-hidden flex justify-center items-center p-1 sm:w-[200px] sm:h-[200px]"
+            className="dhh w-[360px] h-[360px] bg-transparent rounded-[100px] sm:rounded-[60px] overflow-hidden flex justify-center items-center p-1 sm:w-[200px] sm:h-[200px]"
             style={{
               boxShadow:
                 "0px 0px 100px 5px var(--color-4), 0 0 0 3px var(--color-5)",
             }}
           >
             <Image
-              className="rounded-full h-full object-cover"
+              className="rounded-[95px] sm:rounded-[55px] h-full object-cover"
               src={Portrait}
               alt=""
-            ></Image>
+            />
           </div>
-          <p className="text-[var(--color-2)] text-[11px] italic">
-            Simply out of this world...
+          <p className="text-[var(--color-2)] text-[12px] italic">
+            Out of this world...
           </p>
           <p className="h-[40px] items-center socials text-center flex gap-10 text-[var(--color-3)] text-[20px] ">
             <Link href="">
@@ -59,6 +59,7 @@ export default function FrontMain() {
           </p>
         </div>
       </div>
+
       <div className="flex gap-[40px] sm:justify-between">
         <div className="flex flex-col text-[12px] font-semibold text-[var(--color-1)]">
           <p className="top text-[var(--color-2)]">Based In</p>

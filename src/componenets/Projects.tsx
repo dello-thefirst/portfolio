@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import blogCardImage from "@/app/assets/images/blog-card.png";
-import businessCardImage from "@/app/assets/images/business-card.png";
-import ecommerceCardImage from "@/app/assets/images/ecommerce-card.png";
-import entertainmentCardImage from "@/app/assets/images/entertainment-card.png";
+import blogCardImage from "@/src/app/assets/images/blog-card.png";
+import businessCardImage from "@/src/app/assets/images/business-card.png";
+import ecommerceCardImage from "@/src/app/assets/images/ecommerce-card.png";
+import entertainmentCardImage from "@/src/app/assets/images/entertainment-card.png";
 export function CardContainer() {
   return (
     <>

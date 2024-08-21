@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import ThemeToggle from "./ThemeToggle";
 interface PageProps {
   page?: string;
 }
@@ -25,13 +26,15 @@ export default function Header() {
           </Link>
         </ul>
       </nav>
-
-      <button
-        className="btn w-[120px] h-[40px] rounded-lg bg-[var(--color-2)] text-[12px] font-medium text-white"
-        onClick={() => window.location.assign("https://wa.me/2349125165937")}
-      >
-        Contact Me &nbsp; <i className="fa-regular fa-paper-plane"></i>
-      </button>
+      <div className="right flex gap-3 items-center">
+        <ThemeToggle />
+        <button
+          className="btn w-[120px] h-[30px] rounded-lg bg-[var(--color-2)] text-[11px] font-medium text-white"
+          onClick={() => window.location.assign("https://wa.me/2349125165937")}
+        >
+          Contact Me &nbsp; <i className="fa-regular fa-paper-plane"></i>
+        </button>
+      </div>
     </header>
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
-import FrontMain from "./componenets/FrontMain";
-import Stacks from "./componenets/Stacks";
-import Projects from "./componenets/Projects";
+import FrontMain from "../componenets/FrontMain";
+import Stacks from "../componenets/Stacks";
+import Projects from "../componenets/Projects";
 
 export default function Home() {
   return (

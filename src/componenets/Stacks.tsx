@@ -1,18 +1,18 @@
 import React from "react";
 import Image from "next/image";
-import htmlLogo from "@/app/logos/html.png";
-import cssLogo from "@/app/logos/css.png";
-import jsLogo from "@/app/logos/javascript.png";
-import phpLogo from "@/app/logos/php.png";
-import reactLogo from "@/app/logos/react.png";
-import nextjsLogo from "@/app/logos/nextjs.png";
-import tailwindLogo from "@/app/logos/tailwind.png";
-import jqueryLogo from "@/app/logos/jquery.png";
-import sqlLogo from "@/app/logos/sql.png";
+import htmlLogo from "@/src/app/logos/html.png";
+import cssLogo from "@/src/app/logos/css.png";
+import jsLogo from "@/src/app/logos/javascript.png";
+import phpLogo from "@/src/app/logos/php.png";
+import reactLogo from "@/src/app/logos/react.png";
+import nextjsLogo from "@/src/app/logos/nextjs.png";
+import tailwindLogo from "@/src/app/logos/tailwind.png";
+import jqueryLogo from "@/src/app/logos/jquery.png";
+import sqlLogo from "@/src/app/logos/sql.png";
 
 const Stacks = () => {
   return (
-    <div className="stack-container w-full h-auto flex py-[10%] sm:flex-col">
+    <div className="stack-container w-full h-auto flex py-[2%] sm:py-[10%] sm:flex-col">
       <div className="left w-full">
         <p className="text-[15px] text-[var(--color-2)] font-medium mb-8">
           Fullstack web developer
