@@ -48,7 +48,6 @@ export default function FrontMain() {
                 unoptimized
                 className="rounded-full w-full h-full object-cover bg-neutral-800"
                 width={300}
-                height={300}
                 src={Portrait}
                 alt=""
               />
