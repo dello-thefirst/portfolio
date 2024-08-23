@@ -10,31 +10,9 @@ const poppins = Poppins({
   display: "swap",
 });
 export default function Providers({ children }: { children: React.ReactNode }) {
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) {
-      document.documentElement.setAttribute("data-theme", savedTheme);
-    } else {
-      document.documentElement.setAttribute("data-theme", "dark");
-      localStorage.setItem("theme", "dark");
-    }
-  }, []);
   return (
     <>
       <html lang="en" className={poppins.className} data-theme="">
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-          const savedTheme = localStorage.getItem('theme');
-          if(savedTheme) {
-            document.documentElement.setAttribute('data-theme', savedTheme);
-          }else {
-            document.documentElement.setAttribute('data-theme', 'dark')
-            localStorage.setItem("theme", "dark")
-          }
-          `,
-          }}
-        ></script>
         <head>
           <link
             rel="stylesheet"
@@ -44,6 +22,19 @@ export default function Providers({ children }: { children: React.ReactNode }) {
         <body className={`bg-main  ${poppins.className}`}>
           <Header />
           {children}
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+          const savedTheme = localStorage.getItem('theme');
+          if(savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+          }else {
+            document.documentElement.setAttribute('data-theme', 'dark')
+            localStorage.setItem("theme", "dark")
+          }
+          `,
+            }}
+          ></script>
         </body>
       </html>
     </>
