@@ -15,10 +15,12 @@ const ThemeToggle = () => {
 
   return (
     <div
-      className="cursor-pointer text-theme-color"
+      className={`cursor-pointer text-theme-color text-[18px]`}
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
-      <i className="fa-regular fa-sun-dust text-"></i>
+      <i
+        className={`fa-light ${theme === "dark" ? "fa-moon" : "fa-sun-bright"}`}
+      ></i>
     </div>
   );
 };
