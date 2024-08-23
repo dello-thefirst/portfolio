@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
 import Portrait from "@/src/assets/images/main.jpg";
 import Link from "next/link";
+import { motion } from "framer-motion";
 export default function FrontMain() {
   return (
     <main className="w-full h-[100vh] sm:h-auto">
@@ -24,18 +26,30 @@ export default function FrontMain() {
           </div>
         </div>
         <div className="right w-full h-full flex flex-col gap-5 items-center justify-center sm:mb-10">
-          <div
-            className="dhh w-[360px] h-[360px] bg-transparent rounded-full overflow-hidden flex justify-center items-center p-1 sm:w-[200px] sm:h-[200px] drop-shadow-2xl"
-            style={{
-              boxShadow:
-                "0px 0px 100px 5px var(--color-4), 0 0 0 3px var(--color-5)",
-            }}
-          >
-            <Image
-              className="rounded-full h-full object-cover"
-              src={Portrait}
-              alt=""
-            />
+          <div className="dhh w-[360px] h-[360px] bg-transparent rounded-full flex justify-center items-center p-1 sm:w-[200px] sm:h-[200px] drop-shadow-2xl relative">
+            <div className="bg-[rebeccapurple] w-full h-full absolute z-[1] rounded-full"></div>
+            <motion.div
+              className="w-full h-full absolute z-[2]"
+              initial={{
+                transform: "translateZ(8px) translateY(-2px) translateX(-5px)",
+              }}
+              animate={{
+                transform:
+                  "translateZ(50px) translateY(-12px) translateX(-10px)",
+              }}
+              transition={{
+                repeat: Infinity,
+                repeatType: "mirror",
+                duration: 2,
+                ease: "easeInOut",
+              }}
+            >
+              <Image
+                className="rounded-full h-full object-cover"
+                src={Portrait}
+                alt=""
+              />
+            </motion.div>
           </div>
           <p className="text-[var(--color-2)] text-[12px] italic">
             Out of this world...
