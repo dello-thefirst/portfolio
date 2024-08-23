@@ -31,7 +31,7 @@ export default function FrontMain() {
             <motion.div
               className="w-full h-full absolute z-[2]"
               initial={{
-                transform: "translateZ(8px) translateY(-2px) translateX(-5px)",
+                transform: "translateZ(8px) translateY(-2px) translateX(-8px)",
               }}
               animate={{
                 transform:
@@ -45,7 +45,10 @@ export default function FrontMain() {
               }}
             >
               <Image
-                className="rounded-full h-full object-cover"
+                unoptimized
+                className="rounded-full w-full h-full object-cover bg-neutral-800"
+                width={300}
+                height={300}
                 src={Portrait}
                 alt=""
               />
