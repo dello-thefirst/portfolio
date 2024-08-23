@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
 import "./globals.css";
-import Providers from "../utils/Providers";
+import { ThemeProvider } from "next-themes";
+import Header from "@/src/componenets/Header";
+import { Poppins } from "next/font/google";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700"],
@@ -46,5 +47,20 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <Providers>{children}</Providers>;
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
+        />
+      </head>
+      <body className={`bg-main ${poppins.className}`}>
+        <ThemeProvider themes={["light", "dark"]} defaultTheme="light">
+          <Header />
+          {children}
+        </ThemeProvider>
+      </body>
+    </html>
+  );
 }

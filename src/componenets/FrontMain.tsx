@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Portrait from "@/src/app/0_0.webp";
+import Portrait from "@/src/assets/images/main.jpg";
 import Link from "next/link";
 export default function FrontMain() {
   return (
