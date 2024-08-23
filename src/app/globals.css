@@ -31,6 +31,27 @@ body {
   --color-4: rgb(96, 10, 101);
 }
 
+:root[data-theme="pink"] {
+  --bg-main: 222, 21, 122;
+  --theme-color: 255, 255, 255;
+  --color-1: white;
+  --color-2: rgb(142, 91, 199);
+  --color-3: rgb(175, 173, 173);
+  --color-4: rgb(96, 10, 101);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+html {
+  animation: fadeIn 0.5s ease;
+}
+
 .center-div {
   display: flex;
   align-items: center;
