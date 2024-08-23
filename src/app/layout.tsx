@@ -48,6 +48,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={poppins.className}>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+          const savedTheme = localStorage.getItem('theme') || 'dark';
+          document.documentElement.setAttribute('data-theme', savedTheme);
+          `,
+        }}
+      ></script>
       <head>
         <link
           rel="stylesheet"
