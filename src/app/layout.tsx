@@ -46,28 +46,5 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <html lang="en" className={poppins.className} data-theme="dark">
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-          const savedTheme = localStorage.getItem('theme');
-          if(savedTheme) {
-            document.documentElement.setAttribute('data-theme', savedTheme);
-          }else {
-            document.documentElement.setAttribute('data-theme', 'dark')
-            localStorage.setItem("theme", "dark")
-          }
-          `,
-        }}
-      ></script>
-      <head>
-        <link
-          rel="stylesheet"
-          href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
-        />
-      </head>
-      <Providers>{children}</Providers>
-    </html>
-  );
+  return <Providers>{children}</Providers>;
 }
