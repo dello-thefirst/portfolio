@@ -25,14 +25,14 @@ export default function FrontMain() {
         </div>
         <div className="right w-full h-full flex flex-col gap-5 items-center justify-center sm:mb-10">
           <div
-            className="dhh w-[360px] h-[360px] bg-transparent rounded-[100px] sm:rounded-[60px] overflow-hidden flex justify-center items-center p-1 sm:w-[200px] sm:h-[200px]"
+            className="dhh w-[360px] h-[360px] bg-transparent rounded-full overflow-hidden flex justify-center items-center p-1 sm:w-[200px] sm:h-[200px] drop-shadow-2xl"
             style={{
               boxShadow:
                 "0px 0px 100px 5px var(--color-4), 0 0 0 3px var(--color-5)",
             }}
           >
             <Image
-              className="rounded-[95px] sm:rounded-[55px] h-full object-cover"
+              className="rounded-full h-full object-cover"
               src={Portrait}
               alt=""
             />

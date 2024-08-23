@@ -6,32 +6,16 @@ const ThemeToggle = () => {
     if (typeof window !== undefined) {
       const theme = localStorage.getItem("theme");
       if (theme === "light") {
-        document.body.classList.replace("light", "dark");
+        document.body.classList.remove("light");
+        document.body.classList.add("dark");
         localStorage.setItem("theme", "dark");
       } else {
-        document.body.classList.replace("dark", "light");
+        document.body.classList.remove("dark");
+        document.body.classList.add("light");
         localStorage.setItem("theme", "light");
       }
     }
   };
-
-  useEffect(() => {
-    const theme = localStorage.getItem("theme");
-    if (theme) {
-      if (theme === "light") {
-        document.body.classList.add("light");
-        document.body.classList.remove("dark");
-        localStorage.setItem("theme", "light");
-      } else {
-        document.body.classList.add("dark");
-        document.body.classList.remove("light");
-        localStorage.setItem("theme", "dark");
-      }
-    } else {
-      document.body.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    }
-  }, []);
 
   //   useEffect(() => {
   //     const theme = localStorage.getItem("theme");

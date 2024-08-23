@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import Header from "../componenets/Header";
+import Providers from "../utils/Providers";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700"],
@@ -54,10 +54,7 @@ export default function RootLayout({
           href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
         />
       </head>
-      <body className="bg-main dark">
-        <Header />
-        {children}
-      </body>
+      <Providers>{children}</Providers>
     </html>
   );
 }
