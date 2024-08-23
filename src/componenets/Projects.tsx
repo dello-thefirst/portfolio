@@ -10,7 +10,7 @@ export function CardContainer() {
       <p className="text-center text-[40px] font-semibold mb-10 sm:text-[25px]">
         Services I Offer<span className="text-[var(--color-2)]">.</span>
       </p>
-      <div className="card-container grid grid-cols-4 gap-3 gap-y-5 md:grid-cols-3 sm:grid-cols-2">
+      <div className="card-container grid grid-cols-4 gap-3 gap-y-5 sm:grid-cols-2">
         <div className="card overflow-hidden rounded-lg bg-slate-50/10">
           <Image
             src={blogCardImage}
