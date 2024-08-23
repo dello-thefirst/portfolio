@@ -51,8 +51,13 @@ export default function RootLayout({
       <script
         dangerouslySetInnerHTML={{
           __html: `
-          const savedTheme = localStorage.getItem('theme') || 'dark';
-          document.documentElement.setAttribute('data-theme', savedTheme);
+          const savedTheme = localStorage.getItem('theme');
+          if(savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+          }else {
+            document.documentElement.setAttribute('data-theme', 'dark')
+            localStorage.setItem("theme", "dark")
+          }
           `,
         }}
       ></script>
