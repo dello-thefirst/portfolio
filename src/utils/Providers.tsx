@@ -10,7 +10,9 @@ const poppins = Poppins({
 });
 export default function Providers({ children }: { children: React.ReactNode }) {
   const theme =
-    typeof window !== undefined ? localStorage.getItem("theme") : "dark";
+    typeof window !== undefined && localStorage
+      ? localStorage.getItem("theme")
+      : "dark";
   return (
     <>
       <body className={`bg-main ${theme} ${poppins.className}`}>
