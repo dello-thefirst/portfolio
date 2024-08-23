@@ -26,7 +26,7 @@ export default function FrontMain() {
           </div>
         </div>
         <div className="right w-full h-full flex flex-col gap-5 items-center justify-center sm:mb-10">
-          <div className="dhh w-[360px] h-[360px] bg-transparent rounded-full flex justify-center items-center p-1 sm:w-[200px] sm:h-[200px] drop-shadow-2xl relative">
+          <div className="dhh w-[360px] h-[360px] bg-transparent rounded-full flex justify-center items-center p-1 sm:w-[250px] sm:h-[250px] drop-shadow-2xl relative">
             <div className="bg-[rebeccapurple] w-full h-full absolute z-[1] rounded-full"></div>
             <motion.div
               className="w-full h-full absolute z-[2]"
@@ -45,9 +45,7 @@ export default function FrontMain() {
               }}
             >
               <Image
-                unoptimized
                 className="rounded-full w-full h-full object-cover bg-neutral-800"
-                width={300}
                 src={Portrait}
                 alt=""
               />
