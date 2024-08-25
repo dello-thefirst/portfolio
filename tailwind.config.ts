@@ -24,7 +24,10 @@ module.exports = {
       },
       colors: {
         main: "rgba(var(--bg-main))",
-        "theme-color": "rgba(var(--theme-color))",
+        "color-1": "rgba(var(--color-1))",
+        "color-2": "rgba(var(--color-2))",
+        "color-3": "rgba(var(--color-3))",
+        "color-4": "rgba(var(--color-4))",
       },
     },
   },

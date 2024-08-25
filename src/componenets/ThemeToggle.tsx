@@ -15,7 +15,7 @@ const ThemeToggle = () => {
 
   return (
     <div
-      className={`cursor-pointer text-theme-color text-[18px]`}
+      className={`w-[30px] h-[30px] center-div rounded-md bg-color-2/20 cursor-pointer text-color-1 text-[16px]`}
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
       <i

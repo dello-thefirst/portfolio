@@ -13,32 +13,55 @@ body {
   font-family: var(--font-main);
 }
 
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--color-2));
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-button:single-button:decrement {
+  background-color: #cccccc;
+  height: 16px;
+  display: block;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns%3D%22http%3A//www.w3.org/2000/svg%22 fill%3D%22%23000000%22 viewBox%3D%220 0 24 24%22%3E%3Cpath d%3D%22M7 14l5-5 5 5H7z%22/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Customize the down arrow */
+::-webkit-scrollbar-button:single-button:increment {
+  background-color: #cccccc;
+  height: 16px;
+  display: block;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns%3D%22http%3A//www.w3.org/2000/svg%22 fill%3D%22%23000000%22 viewBox%3D%220 0 24 24%22%3E%3Cpath d%3D%22M7 10l5 5 5-5H7z%22/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 :root[data-theme="light"] {
   --bg-main: 255, 255, 255;
-  --theme-color: 0, 0, 0;
-  --color-1: rgb(72, 31, 147);
-  --color-2: rgb(24, 7, 44);
-  --color-3: rgb(90, 89, 95);
-  --color-4: rgb(96, 10, 101);
+  --color-1: 0, 0, 0;
+  --color-2: 142, 91, 199;
+  --color-3: 70, 79, 75;
+  --color-4: 96, 10, 101;
 }
 
 :root[data-theme="dark"] {
   --bg-main: 10, 3, 17;
-  --theme-color: 255, 255, 255;
-  --color-1: white;
-  --color-2: rgb(142, 91, 199);
-  --color-3: rgb(175, 173, 173);
-  --color-4: rgb(96, 10, 101);
+  --color-1: 255, 255, 255;
+  --color-2: 142, 91, 199;
+  --color-3: 175, 173, 173;
+  --color-4: 96, 10, 101;
 }
 
-:root[data-theme="pink"] {
-  --bg-main: 222, 21, 122;
-  --theme-color: 255, 255, 255;
-  --color-1: white;
-  --color-2: rgb(142, 91, 199);
-  --color-3: rgb(175, 173, 173);
-  --color-4: rgb(96, 10, 101);
-}
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -56,4 +79,14 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.revealTrans {
+  opacity: 1;
+  transition: 0.6s all ease-out;
+}
+
+.hiddenTrans {
+  opacity: 0;
+  margin-top: 100px;
 }

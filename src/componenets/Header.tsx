@@ -8,13 +8,13 @@ interface PageProps {
 export default function Header() {
   return (
     <header className="w-full h-[100px] flex items-center px-[5%] justify-between">
-      <div className="logo text-[var(--color-2)] text-[22px] font-semibold font-sans">
+      <div className="logo text-color-2 text-[22px] font-semibold font-sans">
         <Link href={`/`}>
-          <span className="text-[var(--color-1)]">Dev</span> Victor
+          <span className="text-color-1">Dev</span> Victor
         </Link>
       </div>
       <nav className="sm:hidden">
-        <ul className="flex gap-10 text-[var(--color-3)] text-[12px]">
+        <ul className="flex gap-10 text-color-3 text-[12px]">
           <Link href="">
             <li className="font-medium">Home</li>
           </Link>
@@ -29,7 +29,7 @@ export default function Header() {
       <div className="right flex gap-3 items-center">
         <ThemeToggle />
         <button
-          className="btn w-[120px] h-[30px] rounded-lg bg-[var(--color-2)] text-[11px] font-medium text-white"
+          className="btn w-[120px] h-[30px] rounded-lg bg-color-2 text-[11px] font-medium text-white"
           onClick={() => window.location.assign("https://wa.me/2349125165937")}
         >
           Contact Me &nbsp; <i className="fa-regular fa-paper-plane"></i>

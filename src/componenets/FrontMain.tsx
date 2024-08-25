@@ -9,19 +9,18 @@ export default function FrontMain() {
       <div className="w-full flex h-[70%] flex-row sm:h-auto sm:flex-col-reverse sm:mb-10">
         <div className="left w-full h-full sm:h-auto flex items-center">
           <div>
-            <p className="text-[50px] text-[var(--color-1)] font-bold sm:text-[30px] sm:mb-[10px]">
-              Dev<span className="text-[var(--color-2)]">.</span>
-              <br></br> Victor Faruna
+            <p className="text-[50px] text-color-1 font-bold sm:text-[30px] sm:mb-[10px]">
+              Dev<span className="text-color-2">.</span>
+              <br></br> Victor Faruna{" "}
+              <span className="text-[20px] text-neutral-300/10">*Dello*</span>
             </p>
-            <p className="text-[13px] text-[var(--color-3)] font-medium">
-              Fullstack{" "}
-              <span className="text-[var(--color-2)] text-shadow-xl">
-                web developer
-              </span>{" "}
-              in React, Next JS, JSON, jQuery, PHP and SQL. I bring a dynamic
-              skill set to every project. With a passion for crafting seamless
-              user experiences and robust backend systems, I thrive in both
-              frontend and backend development environments.
+            <p className="text-[13px] text-color-3 font-medium">
+              A passionate{" "}
+              <span className="text-color-2 text-shadow-xl">web developer</span>{" "}
+              dedicated to transforming ideas into engaging, functional, and
+              visually stunning websites. With a keen eye for detail and a deep
+              understanding of modern technologies, I blend creativity with
+              robust coding practices to deliver seamless user experiences.
             </p>
           </div>
         </div>
@@ -51,10 +50,10 @@ export default function FrontMain() {
               />
             </motion.div>
           </div>
-          <p className="text-[var(--color-2)] text-[12px] italic">
+          <p className="text-color-2 text-[12px] italic">
             Out of this world...
           </p>
-          <p className="h-[40px] items-center socials text-center flex gap-10 text-[var(--color-3)] text-[20px] ">
+          <p className="h-[40px] items-center socials text-center flex gap-10 text-color-3 text-[20px] ">
             <Link href="">
               <i className="fa-brands fa-facebook-f transition duration-[0.1s] hover:text-blue-500"></i>
             </Link>
@@ -75,18 +74,18 @@ export default function FrontMain() {
       </div>
 
       <div className="flex gap-[40px] sm:justify-between">
-        <div className="flex flex-col text-[12px] font-semibold text-[var(--color-1)]">
-          <p className="top text-[var(--color-2)]">Based In</p>
+        <div className="flex flex-col text-[12px] font-semibold text-color-1">
+          <p className="top text-color-2">Based In</p>
           <p className="bottom text-[16px]">Nigeria</p>
         </div>
 
-        <div className="flex flex-col text-[12px] font-semibold text-[var(--color-1)]">
-          <p className="top text-[var(--color-2)]">Experience</p>
+        <div className="flex flex-col text-[12px] font-semibold text-color-1">
+          <p className="top text-color-2">Experience</p>
           <p className="bottom text-[16px]">4+ years</p>
         </div>
 
-        <div className="flex flex-col text-[12px] font-semibold text-[var(--color-1)]">
-          <p className="top text-[var(--color-2)]">Fluent In</p>
+        <div className="flex flex-col text-[12px] font-semibold text-color-1">
+          <p className="top text-color-2">Fluent In</p>
           <p className="bottom text-[16px]">English</p>
         </div>
       </div>
