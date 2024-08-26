@@ -18,7 +18,7 @@ export default function Header() {
           <Link href="">
             <li className="font-medium">Home</li>
           </Link>
-          <Link href="">
+          <Link href="" id="stack-nav-btn">
             <li className="font-medium">About</li>
           </Link>
           <Link href="">

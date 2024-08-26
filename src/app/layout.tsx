@@ -60,6 +60,16 @@ export default function RootLayout({
           <Header />
           {children}
         </ThemeProvider>
+        <script
+          defer
+          dangerouslySetInnerHTML={{
+            __html: `
+              document.getElementById("stack-nav-btn").addEventListener("click", function() {
+                document.getElementById("stackSection").scrollIntoView({ behavior: 'smooth' });
+                });
+              `,
+          }}
+        ></script>
       </body>
     </html>
   );

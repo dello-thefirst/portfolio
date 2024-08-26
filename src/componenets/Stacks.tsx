@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import htmlLogo from "@/src/app/logos/html.png";
@@ -15,14 +15,16 @@ import { useInView } from "react-intersection-observer";
 
 const Stacks = () => {
   const { ref, inView, entry } = useInView({ threshold: 0.1 });
+  const stackRef = useRef(null);
   return (
     <div
+      id="stackSection"
       ref={ref}
       className={`stack-container w-full h-auto flex py-[2%] sm:py-[10%] sm:flex-col ${
         inView ? "revealTrans" : "hiddenTrans"
       }`}
     >
-      <div className="left w-full">
+      <div className="left w-full" ref={stackRef}>
         <p className="text-[15px] text-color-2 font-medium mb-8">
           Fullstack web developer
         </p>
