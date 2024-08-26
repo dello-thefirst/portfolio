@@ -3,10 +3,19 @@ import Image from "next/image";
 import Portrait from "@/src/assets/images/main.jpg";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 export default function FrontMain() {
+  const { ref, inView, entry } = useInView({ threshold: 0.1 });
   return (
-    <main className="w-full h-[100vh] sm:h-auto">
-      <div className="w-full flex h-[70%] flex-row sm:h-auto sm:flex-col-reverse sm:mb-10">
+    <main
+      ref={ref}
+      className={`w-full h-[100vh] sm:h-auto ${
+        inView ? "revealTrans" : "hiddenTrans"
+      }`}
+    >
+      <div
+        className={`w-full flex h-[70%] flex-row sm:h-auto sm:flex-col-reverse sm:mb-10 `}
+      >
         <div className="left w-full h-full sm:h-auto flex items-center">
           <div>
             <p className="text-[50px] text-color-1 font-bold sm:text-[30px] sm:mb-[10px]">
