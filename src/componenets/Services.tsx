@@ -9,7 +9,7 @@ const Services = () => {
   return (
     <div
       ref={ref}
-      className={`w-full flex gap-5 my-10 sm:flex-col ${
+      className={`w-full flex gap-5 mb-10 sm:flex-col ${
         inView ? "revealTrans" : "hiddenTrans"
       }`}
     >

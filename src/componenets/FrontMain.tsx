@@ -9,7 +9,7 @@ export default function FrontMain() {
   return (
     <main
       ref={ref}
-      className={`w-full h-[100vh] sm:h-auto ${
+      className={`w-full h-[100vh] sm:h-auto mb-10 ${
         inView ? "revealTrans" : "hiddenTrans"
       }`}
     >
