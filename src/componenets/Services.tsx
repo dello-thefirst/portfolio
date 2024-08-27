@@ -4,7 +4,8 @@ import { useInView } from "react-intersection-observer";
 
 const Services = () => {
   const { ref, inView } = useInView({
-    delay: 0,
+    threshold: 0.25,
+    triggerOnce: true,
   });
   return (
     <div
