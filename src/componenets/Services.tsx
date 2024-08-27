@@ -3,23 +3,34 @@ import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
 const Services = () => {
-  const { ref, inView } = useInView({
+  const { ref: ref1, inView: inView1 } = useInView({
     threshold: 0.35,
     triggerOnce: true,
+    delay: 0,
+  });
+  const { ref: ref2, inView: inView2 } = useInView({
+    threshold: 0.35,
+    triggerOnce: true,
+    delay: 10,
+  });
+  const { ref: ref3, inView: inView3 } = useInView({
+    threshold: 0.35,
+    triggerOnce: true,
+    delay: 30,
   });
   return (
-    <div
-      ref={ref}
-      className={`w-full py-[2%] sm:py-[10%] ${
-        inView ? "revealTrans" : "hiddenTrans"
-      }`}
-    >
+    <div className={`w-full py-[2%] sm:py-[10%]`}>
       <p className="text-[20px] text-color-2 font-medium mb-8">
         Services I Offer<span className="text-color-1">.</span>
       </p>
       <div className="flex gap-5 sm:flex-col">
         <div
-          className={`w-full h-auto rounded-lg bg-color-1/[0.02] p-4 flex flex-col gap-4 overflow-hidden shadow-lg`}
+          ref={ref1}
+          className={`w-full h-auto transition-all duration-500 delay-0 rounded-lg bg-color-1/[0.02] p-4 flex flex-col gap-4 overflow-hidden shadow-lg ${
+            inView1
+              ? "opacity-1 translate-x-0"
+              : "opacity-0 translate-x-[100px]"
+          }`}
         >
           <i className="text-[50px] text-color-2 fa-solid fa-code"></i>
           <p className="text-color-1">Fullstack Development</p>
@@ -31,7 +42,12 @@ const Services = () => {
           </p>
         </div>
         <div
-          className={`w-full h-auto rounded-lg bg-color-1/[0.02] p-4 flex flex-col gap-4 overflow-hidden shadow-lg`}
+          ref={ref2}
+          className={`w-full h-auto transition-all duration-500 delay-75 rounded-lg bg-color-1/[0.02] p-4 flex flex-col gap-4 overflow-hidden shadow-lg ${
+            inView2
+              ? "opacity-1 translate-x-0"
+              : "opacity-0 translate-x-[100px]"
+          }`}
         >
           <i className="text-[50px] text-color-2 fa-regular fa-mobile"></i>
           <p className="text-color-1">Mobile App Development</p>
@@ -43,7 +59,12 @@ const Services = () => {
           </p>
         </div>
         <div
-          className={`w-full h-auto rounded-lg bg-color-1/[0.02] p-4 flex flex-col gap-4 overflow-hidden shadow-lg`}
+          ref={ref3}
+          className={`w-full h-auto transition-all duration-500 delay-100 rounded-lg bg-color-1/[0.02] p-4 flex flex-col gap-4 overflow-hidden shadow-lg ${
+            inView3
+              ? "opacity-1 translate-x-0"
+              : "opacity-0 translate-x-[100px]"
+          }`}
         >
           <i className="text-[50px] text-color-2 fa-regular fa-pen-nib"></i>
           <p className="text-color-1">Graphic Design</p>
