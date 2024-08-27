@@ -1,10 +1,10 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
 const Services = () => {
   const { ref, inView } = useInView({
-    threshold: 0.25,
+    threshold: 0.35,
     triggerOnce: true,
   });
   return (

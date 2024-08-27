@@ -5,7 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 export default function FrontMain() {
-  const { ref, inView, entry } = useInView({ threshold: 0.1 });
+  const { ref, inView } = useInView({ threshold: 0.25, triggerOnce: true });
   return (
     <main
       ref={ref}

@@ -57,7 +57,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`bg-main ${poppins.className}`}>
-        <ThemeProvider defaultTheme="dark">
+        <ThemeProvider defaultTheme="light">
           <Header />
           {children}
         </ThemeProvider>
