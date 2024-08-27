@@ -25,10 +25,9 @@ export default function FrontMain() {
             <p className="text-[13px] text-color-3 font-medium sm:text-center">
               A passionate{" "}
               <span className="text-color-2 text-shadow-xl">web developer</span>{" "}
-              dedicated to transforming ideas into engaging, functional, and
-              visually stunning websites. With a keen eye for detail and a deep
-              understanding of modern technologies, I blend creativity with
-              robust coding practices to deliver seamless user experiences.
+              turning ideas into functional, visually stunning websites. I
+              combine creativity and modern tech to deliver seamless user
+              experiences.
             </p>
           </div>
         </div>
