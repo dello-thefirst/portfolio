@@ -18,12 +18,11 @@ export default function FrontMain() {
       >
         <div className="left w-full h-full sm:h-auto flex items-center">
           <div>
-            <p className="text-[50px] text-color-1 font-bold sm:text-[30px] sm:mb-[10px]">
+            <p className="text-[50px] text-color-1 font-bold sm:text-[30px] sm:mb-[10px] sm:text-center">
               Dev<span className="text-color-2">.</span>
-              <br></br> Victor Faruna{" "}
-              <span className="text-[20px] text-neutral-300/10">*Dello*</span>
+              <br></br> Victor Faruna
             </p>
-            <p className="text-[13px] text-color-3 font-medium">
+            <p className="text-[13px] text-color-3 font-medium sm:text-center">
               A passionate{" "}
               <span className="text-color-2 text-shadow-xl">web developer</span>{" "}
               dedicated to transforming ideas into engaging, functional, and

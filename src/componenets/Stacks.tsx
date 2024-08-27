@@ -14,7 +14,7 @@ import sqlLogo from "@/src/app/logos/sql.png";
 import { useInView } from "react-intersection-observer";
 
 const Stacks = () => {
-  const { ref, inView, entry } = useInView({ threshold: 0.1 });
+  const { ref, inView, entry } = useInView({ threshold: 0.2 });
   const stackRef = useRef(null);
   return (
     <div
