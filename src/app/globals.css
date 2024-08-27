@@ -83,9 +83,12 @@ html {
 
 .revealTrans {
   opacity: 1;
-  transition: 0.8s all ease-in-out;
+  margin-top: 0;
+  transition: 0.8s all ease-out;
 }
 
 .hiddenTrans {
   opacity: 0;
+  margin-top: 100px;
+  transition: 0.8s all ease-in;
 }

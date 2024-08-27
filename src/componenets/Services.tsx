@@ -1,39 +1,52 @@
+"use client";
 import React from "react";
+import { useInView } from "react-intersection-observer";
 
 const Services = () => {
+  const { ref, inView } = useInView({
+    delay: 0,
+  });
   return (
-    <div className="w-full flex gap-5 my-10 sm:flex-col">
-      <div className="w-full h-[230px] rounded-lg bg-color-1/10 p-4 flex flex-col gap-4 overflow-hidden">
+    <div
+      ref={ref}
+      className={`w-full flex gap-5 my-10 sm:flex-col ${
+        inView ? "revealTrans" : "hiddenTrans"
+      }`}
+    >
+      <div
+        className={`w-full h-auto rounded-lg bg-color-1/10 p-4 flex flex-col gap-4 overflow-hidden`}
+      >
         <i className="text-[50px] text-color-2 fa-solid fa-code"></i>
         <p className="text-color-1">Fullstack Development</p>
 
         <p className="text-color-3 text-[12px] text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni maiores
-          dolor, quibusdam nostrum provident, reprehenderit nulla quidem
-          sapiente possimus, quos eum? Explicabo molestiae nostrum tenetur velit
-          quam id pariatur eum!
+          I create end-to-end solutions, handling both frontend and backend
+          development with React, Next.js, Python, and PHP to deliver complete,
+          efficient web and mobile applications.
         </p>
       </div>
-      <div className="w-full h-[230px] rounded-lg bg-color-1/10 p-4 flex flex-col gap-4 overflow-hidden">
-        <i className="text-[50px] text-color-2 fa-light fa-mobile"></i>
+      <div
+        className={`w-full h-auto rounded-lg bg-color-1/10 p-4 flex flex-col gap-4 overflow-hidden`}
+      >
+        <i className="text-[50px] text-color-2 fa-regular fa-mobile"></i>
         <p className="text-color-1">Mobile App Development</p>
 
         <p className="text-color-3 text-[12px]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni maiores
-          dolor, quibusdam nostrum provident, reprehenderit nulla quidem
-          sapiente possimus, quos eum? Explicabo molestiae nostrum tenetur velit
-          quam id pariatur eum!
+          I build cross-platform mobile applications using React Native,
+          delivering smooth, responsive user experiences for both iOS and
+          Android devices.
         </p>
       </div>
-      <div className="w-full h-[230px] rounded-lg bg-color-1/10 p-4 flex flex-col gap-4 overflow-hidden">
-        <i className="text-[50px] text-color-2 fa-solid fa-pen-nib"></i>
+      <div
+        className={`w-full h-auto rounded-lg bg-color-1/10 p-4 flex flex-col gap-4 overflow-hidden`}
+      >
+        <i className="text-[50px] text-color-2 fa-regular fa-pen-nib"></i>
         <p className="text-color-1">Graphic Design</p>
 
         <p className="text-color-3 text-[12px]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni maiores
-          dolor, quibusdam nostrum provident, reprehenderit nulla quidem
-          sapiente possimus, quos eum? Explicabo molestiae nostrum tenetur velit
-          quam id pariatur eum!
+          I craft visually engaging designs, blending creativity with technical
+          precision to produce compelling graphics that enhance user experiences
+          and brand identity.
         </p>
       </div>
     </div>
