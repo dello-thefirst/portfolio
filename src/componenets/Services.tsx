@@ -18,7 +18,7 @@ const Services = () => {
       </p>
       <div className="flex gap-5 sm:flex-col">
         <div
-          className={`w-full h-auto rounded-lg bg-color-1/[0.02] p-4 flex flex-col gap-4 overflow-hidden`}
+          className={`w-full h-auto rounded-lg bg-color-1/[0.02] p-4 flex flex-col gap-4 overflow-hidden shadow-lg`}
         >
           <i className="text-[50px] text-color-2 fa-solid fa-code"></i>
           <p className="text-color-1">Fullstack Development</p>
@@ -30,7 +30,7 @@ const Services = () => {
           </p>
         </div>
         <div
-          className={`w-full h-auto rounded-lg bg-color-1/[0.02] p-4 flex flex-col gap-4 overflow-hidden`}
+          className={`w-full h-auto rounded-lg bg-color-1/[0.02] p-4 flex flex-col gap-4 overflow-hidden shadow-lg`}
         >
           <i className="text-[50px] text-color-2 fa-regular fa-mobile"></i>
           <p className="text-color-1">Mobile App Development</p>
@@ -42,7 +42,7 @@ const Services = () => {
           </p>
         </div>
         <div
-          className={`w-full h-auto rounded-lg bg-color-1/[0.02] p-4 flex flex-col gap-4 overflow-hidden`}
+          className={`w-full h-auto rounded-lg bg-color-1/[0.02] p-4 flex flex-col gap-4 overflow-hidden shadow-lg`}
         >
           <i className="text-[50px] text-color-2 fa-regular fa-pen-nib"></i>
           <p className="text-color-1">Graphic Design</p>
