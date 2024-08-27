@@ -25,32 +25,17 @@ const Stacks = () => {
       }`}
     >
       <div className="left w-full" ref={stackRef}>
-        <p className="text-[15px] text-color-2 font-medium mb-8">
-          Fullstack web developer
+        <p className="text-[20px] text-color-2 font-medium mb-8">
+          Tech Stack<span className="text-color-1">.</span>
         </p>
         <p className="text-[13px] text-color-3 font-medium mb-8">
-          in React, Next JS, JSON, jQuery, PHP and SQL. As a seasoned fullstack
-          web developer proficient in an array of technologies, including React,
-          Next.js, JSON, jQuery, PHP, and SQL, I bring a dynamic skill set to
-          every project. With a passion for crafting seamless user experiences
-          and robust backend systems, I thrive in both frontend and backend
-          development environments.
-        </p>
-        <p className="text-[13px] text-color-3 font-medium mb-8">
-          In my portfolio, you&apos;ll find a diverse range of projects
-          showcasing my proficiency in creating responsive and intuitive web
-          applications. Leveraging the power of React and Next.js, I excel in
-          building modern, scalable frontend interfaces that prioritize
-          usability and performance. Whether it&apos;s crafting interactive user
-          interfaces or implementing complex data-driven features, I always aim
-          to exceed expectations.
-        </p>
-        <p className="text-[13px] text-color-3 font-medium">
-          My expertise extends to backend development, where I utilize PHP and
-          SQL to architect secure and efficient server-side solutions. From
-          designing relational databases to implementing RESTful APIs, I take
-          pride in building robust backend systems that seamlessly integrate
-          with frontend components.
+          I specialize in building dynamic, responsive web applications using a
+          variety of modern technologies. My core stack includes HTML, CSS,
+          JavaScript and React for frontend development, with a strong focus on
+          React and Next.js for creating seamless, high-performance user
+          experiences. I also have experience in mobile app development using
+          React Native, delivering cross-platform solutions. On the backend, I
+          work with Python and PHP to develop robust server-side functionality.
         </p>
       </div>
       <div className="right w-full px-[8%] sm:px-0 sm:mt-5 ">
