@@ -39,7 +39,7 @@ const Stacks = () => {
         </p>
       </div>
       <div className="right w-full px-[8%] sm:px-0 sm:mt-5 ">
-        <p className="text-[40px] sm:text-[25px] text-white font-semibold text-center">
+        <p className="text-[40px] sm:text-[25px] text-color-1 font-semibold text-center">
           My Stack<span className="text-color-2">.</span>
         </p>
         <div className="w-ful grid grid-cols-3 gap-8 sm:gap-3 p-3">
