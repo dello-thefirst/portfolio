@@ -26,10 +26,10 @@ const Services = () => {
       <div className="flex gap-5 sm:flex-col">
         <div
           ref={ref1}
-          className={`w-full h-auto transition-all duration-500 delay-0 rounded-lg bg-color-1/[0.02] p-4 flex flex-col gap-4 overflow-hidden shadow-lg ${
+          className={`w-full h-auto transition-all duration-500 delay-0 rounded-lg bg-color-1/[0.01] p-4 flex flex-col gap-4 overflow-hidden shadow-lg ${
             inView1
-              ? "opacity-1 translate-x-0"
-              : "opacity-0 translate-x-[100px]"
+              ? "opacity-1 translate-y-0"
+              : "opacity-0 translate-y-[100px]"
           }`}
         >
           <i className="text-[50px] text-color-2 fa-solid fa-code"></i>
@@ -43,10 +43,10 @@ const Services = () => {
         </div>
         <div
           ref={ref2}
-          className={`w-full h-auto transition-all duration-500 delay-75 rounded-lg bg-color-1/[0.02] p-4 flex flex-col gap-4 overflow-hidden shadow-lg ${
+          className={`w-full h-auto transition-all duration-500 delay-75 rounded-lg bg-color-1/[0.01] p-4 flex flex-col gap-4 overflow-hidden shadow-lg ${
             inView2
-              ? "opacity-1 translate-x-0"
-              : "opacity-0 translate-x-[100px]"
+              ? "opacity-1 translate-y-0"
+              : "opacity-0 translate-y-[100px]"
           }`}
         >
           <i className="text-[50px] text-color-2 fa-regular fa-mobile"></i>
@@ -60,10 +60,10 @@ const Services = () => {
         </div>
         <div
           ref={ref3}
-          className={`w-full h-auto transition-all duration-500 delay-100 rounded-lg bg-color-1/[0.02] p-4 flex flex-col gap-4 overflow-hidden shadow-lg ${
+          className={`w-full h-auto transition-all duration-500 delay-100 rounded-lg bg-color-1/[0.01] p-4 flex flex-col gap-4 overflow-hidden shadow-lg ${
             inView3
-              ? "opacity-1 translate-x-0"
-              : "opacity-0 translate-x-[100px]"
+              ? "opacity-1 translate-y-0"
+              : "opacity-0 translate-y-[100px]"
           }`}
         >
           <i className="text-[50px] text-color-2 fa-regular fa-pen-nib"></i>

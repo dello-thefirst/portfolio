@@ -80,15 +80,3 @@ html {
   align-items: center;
   justify-content: center;
 }
-
-.revealTrans {
-  opacity: 1;
-  transform: translateY(0);
-  transition: 0.8s all ease-out;
-}
-
-.hiddenTrans {
-  opacity: 0;
-  transform: translateY(100px);
-  transition: 0.8s all ease-in;
-}

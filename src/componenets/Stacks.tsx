@@ -20,8 +20,8 @@ const Stacks = () => {
     <div
       id="stackSection"
       ref={ref}
-      className={`stack-container w-full h-auto flex py-[2%] sm:py-[10%] sm:flex-col ${
-        inView ? "revealTrans" : "hiddenTrans"
+      className={`stack-container w-full transition-all duration-500 delay-0 h-auto flex py-[2%] sm:py-[10%] sm:flex-col ${
+        inView ? "opacity-1 translate-y-0" : "opacity-0 translate-y-[100px]"
       }`}
     >
       <div className="left w-full" ref={stackRef}>
@@ -42,33 +42,33 @@ const Stacks = () => {
         <p className="text-[40px] sm:text-[25px] text-color-1 font-semibold text-center">
           My Stack<span className="text-color-2">.</span>
         </p>
-        <div className="w-ful grid grid-cols-3 gap-8 sm:gap-3 p-3">
+        <div className="w-ful grid grid-cols-3 grid-rows-3 gap-8 sm:gap-3 p-3">
           <motion.div className="item w-full h-[130px] rounded-lg  bg-opacity-10 center-div">
-            <Image src={htmlLogo} alt=""></Image>
+            <Image className="w-full" src={htmlLogo} alt=""></Image>
           </motion.div>
           <div className="item w-full h-[130px] rounded-lg  bg-opacity-10  center-div">
-            <Image src={cssLogo} alt=""></Image>
+            <Image className="w-full" src={cssLogo} alt=""></Image>
           </div>
           <div className="item w-full h-[130px] rounded-lg  bg-opacity-10  center-div">
-            <Image src={jsLogo} alt=""></Image>
+            <Image className="w-full" src={jsLogo} alt=""></Image>
           </div>
           <div className="item w-full h-[130px] rounded-lg  bg-opacity-10  center-div">
-            <Image src={phpLogo} alt=""></Image>
+            <Image className="w-full" src={phpLogo} alt=""></Image>
           </div>
           <div className="item w-full h-[130px] rounded-lg  bg-opacity-10  center-div">
-            <Image src={reactLogo} alt=""></Image>
+            <Image className="w-full" src={reactLogo} alt=""></Image>
           </div>
           <div className="item w-full h-[130px] rounded-lg  bg-opacity-10  center-div">
-            <Image src={nextjsLogo} alt=""></Image>
+            <Image className="w-full" src={nextjsLogo} alt=""></Image>
           </div>
           <div className="item w-full h-[130px] rounded-lg  bg-opacity-10  center-div">
-            <Image src={tailwindLogo} alt=""></Image>
+            <Image className="w-full" src={tailwindLogo} alt=""></Image>
           </div>
           <div className="item w-full h-[130px] rounded-lg  bg-opacity-10  center-div">
-            <Image src={jqueryLogo} alt=""></Image>
+            <Image className="w-full" src={jqueryLogo} alt=""></Image>
           </div>
           <div className="item w-full h-[130px] rounded-lg  bg-opacity-10 center-div">
-            <Image src={sqlLogo} alt=""></Image>
+            <Image className="w-full" src={sqlLogo} alt=""></Image>
           </div>
         </div>
       </div>
