@@ -83,7 +83,7 @@ html {
 
 .revealTrans {
   opacity: 1;
-  margin-top: initial;
+  margin-top: unset;
   transition: 0.8s all ease-out;
 }
 
