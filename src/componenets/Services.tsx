@@ -26,14 +26,14 @@ const Services = () => {
       <div className="flex gap-5 sm:flex-col">
         <div
           ref={ref1}
-          className={`w-full h-auto transition-all duration-500 delay-0 rounded-lg bg-color-1/[0.01] p-4 flex flex-col gap-4 overflow-hidden shadow-lg ${
+          className={`w-full h-auto transition-all duration-500 delay-0 rounded-2xl border-2 border-color-1/[0.09] bg-color-1/[0.02] p-4 flex flex-col gap-4 overflow-hidden ${
             inView1
               ? "opacity-1 translate-y-0"
               : "opacity-0 translate-y-[100px]"
           }`}
         >
           <i className="text-[50px] text-color-2 fa-solid fa-code"></i>
-          <p className="text-color-1">Fullstack Development</p>
+          <p className="text-color-1 font-semibold">Fullstack Development</p>
 
           <p className="text-color-3 text-[12px] text">
             I create end-to-end solutions, handling both frontend and backend
@@ -43,14 +43,14 @@ const Services = () => {
         </div>
         <div
           ref={ref2}
-          className={`w-full h-auto transition-all duration-500 delay-75 rounded-lg bg-color-1/[0.01] p-4 flex flex-col gap-4 overflow-hidden shadow-lg ${
+          className={`w-full h-auto transition-all duration-500 delay-75 rounded-2xl border-2 border-color-1/[0.09] bg-color-1/[0.02] p-4 flex flex-col gap-4 overflow-hidden ${
             inView2
               ? "opacity-1 translate-y-0"
               : "opacity-0 translate-y-[100px]"
           }`}
         >
           <i className="text-[50px] text-color-2 fa-regular fa-mobile"></i>
-          <p className="text-color-1">Mobile App Development</p>
+          <p className="text-color-1 font-semibold">Mobile App Development</p>
 
           <p className="text-color-3 text-[12px]">
             I build cross-platform mobile applications using React Native,
@@ -60,14 +60,14 @@ const Services = () => {
         </div>
         <div
           ref={ref3}
-          className={`w-full h-auto transition-all duration-500 delay-100 rounded-lg bg-color-1/[0.01] p-4 flex flex-col gap-4 overflow-hidden shadow-lg ${
+          className={`w-full h-auto transition-all duration-500 delay-100 rounded-2xl border-2 border-color-1/[0.09] bg-color-1/[0.02] p-4 flex flex-col gap-4 overflow-hidden ${
             inView3
               ? "opacity-1 translate-y-0"
               : "opacity-0 translate-y-[100px]"
           }`}
         >
           <i className="text-[50px] text-color-2 fa-regular fa-pen-nib"></i>
-          <p className="text-color-1">Graphic Design</p>
+          <p className="text-color-1 font-semibold">Graphic Design</p>
 
           <p className="text-color-3 text-[12px]">
             I craft visually engaging designs, blending creativity with
