@@ -7,7 +7,7 @@ import Services from "../componenets/Services";
 export default function Home() {
   return (
     <>
-      <div className="global-conatiner w-full h-full px-[5%] sm:px-[8%]">
+      <div className="global-conatiner w-full h-full px-[5%] sm:px-[6%]">
         <FrontMain />
         <Services />
         <Stacks />
