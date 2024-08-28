@@ -37,11 +37,12 @@ export default function FrontMain() {
             <motion.div
               className="w-full h-full absolute z-[2]"
               initial={{
-                transform: "translateZ(8px) translateY(-2px) translateX(-8px)",
+                transform:
+                  "translateZ(8px) translateY(-2px) translateX(-8px) scale(1)",
               }}
               animate={{
                 transform:
-                  "translateZ(50px) translateY(-12px) translateX(-10px)",
+                  "translateZ(50px) translateY(-12px) translateX(-10px) scale(1.02)",
               }}
               transition={{
                 repeat: Infinity,
