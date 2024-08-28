@@ -27,10 +27,13 @@ const Services = () => {
     },
   };
   return (
-    <div className={`w-full py-[2%] sm:py-[10%]`}>
-      <p className="text-[20px] text-color-2 font-medium mb-8">
-        Services I Offer<span className="text-color-1">.</span>
+    <div className={`w-full my-[8%] sm:my-[10%]`}>
+      <p className="text-[40px] sm:text-[25px] text-color-1 font-semibold text-center mb-10">
+        Services I Offer<span className="text-color-2">.</span>
       </p>
+      {/* <p className="text-[20px] text-color-2 font-medium mb-8">
+        Services I Offer<span className="text-color-1">.</span>
+      </p> */}
       <div className="flex gap-5 sm:flex-col">
         <ServiceCard {...DATA.fullstack} />
         <ServiceCard {...DATA.mobile} />

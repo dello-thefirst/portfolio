@@ -9,14 +9,14 @@ export default function FrontMain() {
   return (
     <main
       ref={ref}
-      className={`w-full h-[100vh] sm:h-auto mb-10 ${
+      className={`w-full h-[calc(100vh-120px)] sm:h-auto ${
         inView ? "revealTrans" : "hiddenTrans"
       }`}
     >
       <div
-        className={`w-full flex h-[70%] flex-row sm:h-auto sm:flex-col-reverse sm:mb-10 `}
+        className={`w-full flex h-full flex-row sm:h-auto sm:flex-col-reverse sm:mb-10 `}
       >
-        <div className="left w-full h-full sm:h-auto flex items-center">
+        <div className="left w-full h-full sm:h-auto flex flex-col justify-around sm:gap-10">
           <div>
             <p className="text-[50px] text-color-1 font-bold sm:text-[30px] sm:mb-[10px] sm:text-center">
               Dev<span className="text-color-2">.</span>
@@ -29,6 +29,22 @@ export default function FrontMain() {
               combine creativity and modern tech to deliver seamless user
               experiences.
             </p>
+          </div>
+          <div className="flex gap-[40px] sm:justify-between">
+            <div className="flex flex-col text-[12px] font-semibold text-color-1">
+              <p className="top text-color-2">Based In</p>
+              <p className="bottom text-[16px]">Nigeria</p>
+            </div>
+
+            <div className="flex flex-col text-[12px] font-semibold text-color-1">
+              <p className="top text-color-2">Experience</p>
+              <p className="bottom text-[16px]">4+ years</p>
+            </div>
+
+            <div className="flex flex-col text-[12px] font-semibold text-color-1">
+              <p className="top text-color-2">Fluent In</p>
+              <p className="bottom text-[16px]">English</p>
+            </div>
           </div>
         </div>
         <div className="right w-full h-full flex flex-col gap-5 items-center justify-center sm:mb-10">
@@ -78,23 +94,6 @@ export default function FrontMain() {
               <i className="fa-brands fa-linkedin-in transition duration-[0.3s] hover:text-blue-500"></i>
             </Link>
           </p>
-        </div>
-      </div>
-
-      <div className="flex gap-[40px] sm:justify-between">
-        <div className="flex flex-col text-[12px] font-semibold text-color-1">
-          <p className="top text-color-2">Based In</p>
-          <p className="bottom text-[16px]">Nigeria</p>
-        </div>
-
-        <div className="flex flex-col text-[12px] font-semibold text-color-1">
-          <p className="top text-color-2">Experience</p>
-          <p className="bottom text-[16px]">4+ years</p>
-        </div>
-
-        <div className="flex flex-col text-[12px] font-semibold text-color-1">
-          <p className="top text-color-2">Fluent In</p>
-          <p className="bottom text-[16px]">English</p>
         </div>
       </div>
     </main>
