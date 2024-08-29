@@ -55,7 +55,7 @@ body {
 }
 
 :root[data-theme="dark"] {
-  --bg-main: 10, 3, 17;
+  --bg-main: 14, 2, 25;
   --color-1: 255, 255, 255;
   --color-2: 142, 91, 199;
   --color-3: 175, 173, 173;
@@ -65,6 +65,7 @@ body {
 @keyframes fadeIn {
   from {
     opacity: 0;
+    color: rgb(14, 2, 25);
   }
   to {
     opacity: 1;

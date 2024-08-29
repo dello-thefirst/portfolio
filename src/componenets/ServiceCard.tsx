@@ -16,7 +16,7 @@ const ServiceCard = (props: {
   return (
     <div
       ref={ref}
-      className={`w-full h-auto transition-all duration-500 rounded-sm shadow-xl bborder-color-1/[0.15] bg-color-1/[0.009] p-4 flex flex-col gap-4 overflow-hidden ${
+      className={`w-full h-auto transition-all duration-500 rounded-sm shadow-lg border-color-1/[0.15] bg-color-1/[0.01] p-4 flex flex-col gap-4 overflow-hidden  ${
         inView
           ? `opacity-1 translate-y-0 ${
               props.id == 2 ? "delay-75" : props.id == 3 ? "delay-100" : ""
