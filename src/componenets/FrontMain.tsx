@@ -4,8 +4,16 @@ import Portrait from "@/src/assets/images/main.jpg";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 export default function FrontMain() {
   const { ref, inView } = useInView({ threshold: 0.25, triggerOnce: true });
+  const madMan = new Promise((resolve, reject) => {
+    setTimeout(() => resolve(console.log("hello mfk")), 5000);
+  });
+  useEffect(() => {
+    const func = async () => await madMan;
+    func();
+  }, []);
   return (
     <main
       ref={ref}
@@ -19,8 +27,7 @@ export default function FrontMain() {
         <div className="left w-full h-full sm:h-auto flex flex-col justify-around sm:gap-10">
           <div>
             <p className="text-[50px] text-color-1 font-bold sm:text-[30px] sm:mb-[10px] sm:text-center">
-              Dev<span className="text-color-2">.</span>
-              <br></br> Victor Faruna
+              Dev<span className="text-color-2">.</span> Victor
             </p>
             <p className="text-[13px] text-color-3 font-medium sm:text-center">
               A passionate{" "}
