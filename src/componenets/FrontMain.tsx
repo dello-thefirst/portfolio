@@ -7,13 +7,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 export default function FrontMain() {
   const { ref, inView } = useInView({ threshold: 0.25, triggerOnce: true });
-  const madMan = new Promise((resolve, reject) => {
-    setTimeout(() => resolve(console.log("hello mfk")), 5000);
-  });
-  useEffect(() => {
-    const func = async () => await madMan;
-    func();
-  }, []);
+
   return (
     <main
       ref={ref}

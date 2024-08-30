@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import Header from "@/src/componenets/Header";
 import { Poppins } from "next/font/google";
+import MouseTracker from "../componenets/MouseTracker";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700"],

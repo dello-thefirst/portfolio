@@ -11,6 +11,13 @@
 body {
   --font-main: var(--font-poppins);
   font-family: var(--font-main);
+  height: 100vh;
+  overflow: auto;
+  background: radial-gradient(
+    circle at 50% 50%,
+    #0f0222 0%,
+    rgb(var(--bg-main)) 35%
+  );
 }
 
 ::-webkit-scrollbar {
@@ -55,7 +62,7 @@ body {
 }
 
 :root[data-theme="dark"] {
-  --bg-main: 14, 2, 25;
+  --bg-main: 10, 3, 17;
   --color-1: 255, 255, 255;
   --color-2: 142, 91, 199;
   --color-3: 175, 173, 173;
