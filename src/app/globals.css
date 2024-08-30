@@ -11,8 +11,6 @@
 body {
   --font-main: var(--font-poppins);
   font-family: var(--font-main);
-  height: 100vh;
-  overflow: auto;
 }
 
 ::-webkit-scrollbar {
@@ -62,6 +60,18 @@ body {
   --color-2: 142, 91, 199;
   --color-3: 175, 173, 173;
   --color-4: 96, 10, 101;
+}
+
+:root[data-theme="light"] body {
+  /* From https://css.glass */
+  background: url(/images/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15.8px);
+  -webkit-backdrop-filter: blur(15.8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 @keyframes fadeIn {
