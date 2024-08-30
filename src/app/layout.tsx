@@ -59,6 +59,7 @@ export default function RootLayout({
       </head>
       <body className={`bg-main ${poppins.className}`}>
         <ThemeProvider defaultTheme="light">
+          <MouseTracker />
           <Header />
           {children}
         </ThemeProvider>
